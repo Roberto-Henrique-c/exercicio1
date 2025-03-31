@@ -1,14 +1,24 @@
-using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using NUnit.Framework;
-
+[TestClass]
 public class TesteCalculadora
 {
-    public void somar 
+    [TestMethod]
+    public void Somar_ComDoisNumerosPositivos_DeveRetornarSomaCorreta()
     {
-        return a + b;
-    }
+        var calculadora = new Calculadora();
 
+        int resultado = calculadora.Somar(2, 3);
+        Assert.AreEqual(5, resultado);
+    }
+}
+    public class Calculadora
+    {
+        public int Somar(int a, int b)
+        {
+            return a + b;
+        }
+    }
     public int Subtract(int a, int b)
     {
         return a - b;
