@@ -108,3 +108,5 @@ public class Program
         Console.WriteLine("É primo? " + calculadora.EPrimo(7));
     }
 }
+//AGATHA MOURA E ROBERTO HENRIQUE
+//DSI02-T
